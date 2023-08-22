@@ -40,7 +40,6 @@ function processData(dogData) {
     })
 }
 
-
 // allow dog data to be edited
 function editDog() {
     // grab form for use in edit button event
