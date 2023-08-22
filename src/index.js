@@ -71,6 +71,8 @@ function editDog() {
         while (table.rows.length > 1) {
             table.deleteRow(1);
         }
+        // repopulate table
+        // preceding operations occur BEFORE calling fetchData()
         return fetchData();
     })
 }
