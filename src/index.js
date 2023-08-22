@@ -65,7 +65,7 @@ function editDog() {
         event.preventDefault();
         // submit form using correct id for patch
         submitForm(form[3].id); 
-        // clear out table
+        // clear out table, except first row
         const table = document.querySelector('.blue');
         while (table.rows.length > 1) {
             table.deleteRow(1);
