@@ -15,6 +15,9 @@ function fetchData() {
 // populate page with dog data
 function processData(dogData) {
     const table = document.querySelector('.blue');
+    while (table.rows.length > 1) {
+        table.deleteRow(1);
+    }
     dogData.forEach(dog => {
         const {name, breed, sex, id} = dog;
         const dogName = document.createElement('td');
